@@ -1,0 +1,3 @@
+{% for host in groups['all'] %}
+{{ ansible_local.bb.network.range }}.{{ loop.index }}:54321
+{% endfor %}
