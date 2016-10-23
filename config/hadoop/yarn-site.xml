@@ -86,7 +86,7 @@
     <!-- ==================================================================== -->
     <property>
         <name>yarn.resourcemanager.hostname</name>
-        <value>{{ hostvars[ansible_local.bb.hex.name + '-n1']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}</value>
+        <value>{{ hostvars[ansible_local.bb.hex.name + '-n3']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}</value>
     </property>
 
     <property>

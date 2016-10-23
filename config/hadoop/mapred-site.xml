@@ -62,10 +62,10 @@
 
     <property>
         <name>mapreduce.jobhistory.address</name>
-        <value>{{ hostvars[ansible_local.bb.hex.name + '-n1']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:10020</value>
+        <value>{{ hostvars[ansible_local.bb.hex.name + '-n3']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:10020</value>
     </property>
     <property>
         <name>mapreduce.jobhistory.webapp.address</name>
-        <value>{{ hostvars[ansible_local.bb.hex.name + '-n1']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:19888</value>
+        <value>{{ hostvars[ansible_local.bb.hex.name + '-n3']["ansible_" + ansible_local.bb.node.nic_ext].ipv4.address }}:19888</value>
     </property>
 </configuration>

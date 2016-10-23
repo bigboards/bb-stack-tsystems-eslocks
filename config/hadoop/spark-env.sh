@@ -52,5 +52,5 @@
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
 
 SPARK_LOCAL_IP="[[ ansible_eth1.ipv4.address ]]"
-SPARK_MASTER_IP="[[ hex.name ]]-n1.hex"
+SPARK_MASTER_IP="[[ hex.name ]]-n3.hex"
 HADOOP_CONF_DIR="/etc/hadoop/conf"
