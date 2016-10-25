@@ -124,6 +124,6 @@
     </property>
     <property>
         <name>dfs.datanode.data.dir</name>
-        <value>file:///persisten/dfs/dn</value>
+        <value>file:///persistent/dfs/dn</value>
     </property>
 </configuration>
