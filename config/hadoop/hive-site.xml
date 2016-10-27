@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+  <property>
+    <name>hive.exec.local.scratchdir</name>
+    <value>/data/tmp/${system:user.name}</value>
+    <description>Local scratch space for Hive jobs</description>
+  </property>
+
+  <property>
+    <name>hive.downloaded.resources.dir</name>
+    <value>/data/tmp/${hive.session.id}_resources</value>
+    <description>Temporary local directory for added resources in the remote file system.</description>
+  </property>
+
+  <property>
+    <name>hive.metastore.uris</name>
+    <value/>
+    <description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
+  </property>
+
+  <property>
+    <name>hive.zookeeper.quorum</name>
+    <value>[[ hex.name ]]-n3.hex</value>
+    <description>
+      List of ZooKeeper servers to talk to. This is needed for: 
+      1. Read/write locks - when hive.lock.manager is set to 
+      org.apache.hadoop.hive.ql.lockmgr.zookeeper.ZooKeeperHiveLockManager, 
+      2. When HiveServer2 supports service discovery via Zookeeper.
+      3. For delegation token storage if zookeeper store is used, if
+      hive.cluster.delegation.token.store.zookeeper.connectString is not set
+    </description>
+  </property>
+
+</configuration>
