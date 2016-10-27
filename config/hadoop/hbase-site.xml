@@ -23,4 +23,11 @@
     <description>The directory shared by RegionServers.
     </description>
   </property>
+  
+  <property>
+    <name>hbase.tmp.dir</name>
+    <value>/data/tmp/hbase</value>
+    <description>Temporary directory on the local filesystem.
+    </description>
+  </property>
 </configuration>
