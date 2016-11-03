@@ -144,7 +144,7 @@
     </property>
     <property>
         <name>dfs.domain.socket.path</name>
-        <value>/var/run/hadoop-hdfs/dn._PORT</value>
+        <value>/tmp/dn._PORT</value>
     </property>
 
     <property>
