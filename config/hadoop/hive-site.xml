@@ -32,7 +32,7 @@
 
   <property>
     <name>hive.metastore.uris</name>
-    <value/>
+    <value>thrift://[[ hex.name ]]-n3.hex:9083</value>
     <description>Thrift URI for the remote metastore. Used by metastore client to connect to remote metastore.</description>
   </property>
 
