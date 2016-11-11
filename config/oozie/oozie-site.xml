@@ -75,4 +75,36 @@
         <value>*</value>
     </property>
 
+
+    <!-- Oozie config folders for hadoop and action overwritten from default   -->
+    <!-- TODO: support subfolders in Tint config folders so they can move back -->
+    <property>
+        <name>oozie.service.HadoopAccessorService.hadoop.configurations</name>
+        <value>*=/etc/oozie-hadoop/conf</value>
+        <description>
+            Comma separated AUTHORITY=HADOOP_CONF_DIR, where AUTHORITY is the HOST:PORT of
+            the Hadoop service (JobTracker, YARN, HDFS). The wildcard '*' configuration is
+            used when there is no exact match for an authority. The HADOOP_CONF_DIR contains
+            the relevant Hadoop *-site.xml files. If the path is relative is looked within
+            the Oozie configuration directory; though the path can be absolute (i.e. to point
+            to Hadoop client conf/ directories in the local filesystem.
+        </description>
+    </property>
+
+
+    <property>
+        <name>oozie.service.HadoopAccessorService.action.configurations</name>
+        <value>*=/etc/oozie-action/conf</value>
+        <description>
+            Comma separated AUTHORITY=ACTION_CONF_DIR, where AUTHORITY is the HOST:PORT of
+            the Hadoop MapReduce service (JobTracker, YARN). The wildcard '*' configuration is
+            used when there is no exact match for an authority. The ACTION_CONF_DIR may contain
+            ACTION.xml files where ACTION is the action type ('java', 'map-reduce', 'pig',
+            'hive', 'sqoop', etc.). If the ACTION.xml file exists, its properties will be used
+            as defaults properties for the action. If the path is relative is looked within
+            the Oozie configuration directory; though the path can be absolute (i.e. to point
+            to Hadoop client conf/ directories in the local filesystem.
+        </description>
+    </property>
+
 </configuration>
