@@ -1936,7 +1936,7 @@
 
     <property>
         <name>oozie.service.HadoopAccessorService.hadoop.configurations</name>
-        <value>*=hadoop-conf</value>
+        <value>*=/etc/oozie-hadoop/conf</value>
         <description>
             Comma separated AUTHORITY=HADOOP_CONF_DIR, where AUTHORITY is the HOST:PORT of
             the Hadoop service (JobTracker, YARN, HDFS). The wildcard '*' configuration is
@@ -1950,7 +1950,7 @@
 
     <property>
         <name>oozie.service.HadoopAccessorService.action.configurations</name>
-        <value>*=action-conf</value>
+        <value>*=/etc/oozie-action/conf</value>
         <description>
             Comma separated AUTHORITY=ACTION_CONF_DIR, where AUTHORITY is the HOST:PORT of
             the Hadoop MapReduce service (JobTracker, YARN). The wildcard '*' configuration is
