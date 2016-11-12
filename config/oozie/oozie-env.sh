@@ -81,3 +81,7 @@ export OOZIE_LOG=/var/log/oozie
 # The Oozie Instance ID
 #
 # export OOZIE_INSTANCE_ID="${OOZIE_HTTP_HOSTNAME}"
+
+# The Oozie ShareLib URI
+#
+export OOZIE_SHARELIB_URI="hdfs://[[ hex.name ]]-n3.hex:8020/"
