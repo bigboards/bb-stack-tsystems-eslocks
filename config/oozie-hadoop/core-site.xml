@@ -20,6 +20,15 @@
 <configuration>
 
     <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://[[ hex.name ]]-n3.hex:8020/</value>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/data/tmp</value>
+    </property>
+
+    <property>
         <name>mapreduce.jobtracker.kerberos.principal</name>
         <value>mapred/_HOST@LOCALREALM</value>
     </property>

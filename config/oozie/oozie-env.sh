@@ -85,3 +85,6 @@ export OOZIE_LOG=/var/log/oozie
 # The Oozie ShareLib URI
 #
 export OOZIE_SHARELIB_URI="hdfs://[[ hex.name ]]-n3.hex:8020/"
+
+# The hadoop conf dir
+export OOZIE_HADOOP_CONF_DIR="/etc/oozie-hadoop/conf"
